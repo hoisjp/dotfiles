@@ -1,0 +1,112 @@
+#!/bin/bash
+
+# ============
+# brew install
+# ============
+#
+# 1. Install Xcode from AppStore
+# Command Line Tools for Xcode
+# Xcode > Open Developer Tool > More Developer Tools...
+#
+# 2. Install homebrew
+# http://brew.sh
+# $ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+# $ brew doctor
+#
+# 3. Run this script
+# $ chmod 744 brew-update
+# $ ./brew-update
+
+# Update HomeBrew
+brew update
+
+# Add Homebrew-binary
+brew tap homebrew/binary
+
+# Upgrade Formulas
+brew upgrade
+
+# Install HomebrewCask
+# https://github.com/caskroom/homebrew-cask
+# Basically, using default path.
+brew install caskroom/cask/brew-cask
+
+# ================
+# Install Packages
+# ================
+
+## Font
+
+## Shell
+brew install zsh
+brew install zsh-completions
+brew tap peco/peco
+brew install peco
+
+## Git
+brew install git
+
+## Required
+brew install readline
+brew install openssl
+
+## Ruby
+brew install rbenv
+brew install ruby-build
+
+
+## Utils
+brew install tree
+brew install jq
+brew install watch
+
+# ====================
+# Install Applications
+# ====================
+
+## Terminal
+
+## Browser
+brew cask install google-chrome
+brew cask install firefox
+
+## Editor
+brew cask install sublime-text
+brew cask install atom
+#brew cask install coteditor
+
+## Java
+brew cask install java # Java8 will be installed.
+brew cask install intellij-idea-ce
+brew cask install intellij-idea
+
+## Utils
+brew cask install google-japanese-ime
+brew cask install the-unarchiver
+brew cask install appcleaner
+brew cask install sourcetree
+brew cask install hipchat
+brew cask install github
+brew cask install skitch
+brew cask install viber
+brew cask install skype
+brew cask install evernote
+
+### Utils for Mac
+brew cask install alfred
+brew cask alfred status
+brew cask alfred link
+brew cask install karabiner
+brew cask install seil
+brew cask install clipmenu
+brew cask install bettertouchtool
+brew cask install nosleep
+brew cask install kobo
+
+# Remove outdated versions
+brew cleanup
+brew cask cleanup
+
+# List installed items
+brew list
+brew cask list

@@ -1,0 +1,10 @@
+'global':
+  'editor':
+    'invisibles': {}
+  'core': {}
+  'exception-reporting':
+    'userId': '2efb76da-8bb3-b4f6-f229-52fde0624a45'
+  'welcome':
+    'showOnStartup': false
+  'tree-view':
+    'showOnRightSide': true
