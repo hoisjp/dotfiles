@@ -89,6 +89,7 @@ brew cask install the-unarchiver
 brew cask install appcleaner
 brew cask install skitch
 brew cask install evernote
+brew cask install kobo
 
 ### Utils for communication
 brew cask install hipchat
@@ -101,7 +102,7 @@ brew cask install sourcetree
 brew cask install github
 brew cask install mysqlworkbench
 
-### Utils for Mac
+### Utils for Mac UI
 brew cask install alfred
 brew cask alfred status
 brew cask alfred link
@@ -110,8 +111,8 @@ brew cask install seil
 brew cask install clipmenu
 brew cask install bettertouchtool
 brew cask install nosleep
-brew cask install kobo
 brew cask install toggldesktop
+brew cask install shiftit
 
 # Remove outdated versions
 brew cleanup
