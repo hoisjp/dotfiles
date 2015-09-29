@@ -54,6 +54,8 @@ brew install openssl
 brew install rbenv
 brew install ruby-build
 
+## Node
+brew install node
 
 ## Utils
 brew install tree
@@ -65,6 +67,7 @@ brew install watch
 # ====================
 
 ## Terminal
+brew cask install iterm2
 
 ## Browser
 brew cask install google-chrome
@@ -84,13 +87,19 @@ brew cask install intellij-idea
 brew cask install google-japanese-ime
 brew cask install the-unarchiver
 brew cask install appcleaner
-brew cask install sourcetree
-brew cask install hipchat
-brew cask install github
 brew cask install skitch
-brew cask install viber
-brew cask install skype
 brew cask install evernote
+
+### Utils for communication
+brew cask install hipchat
+brew cask install skype
+brew cask install viber
+
+### Utils for programming
+brew cask install dash
+brew cask install sourcetree
+brew cask install github
+brew cask install mysqlworkbench
 
 ### Utils for Mac
 brew cask install alfred
@@ -102,6 +111,7 @@ brew cask install clipmenu
 brew cask install bettertouchtool
 brew cask install nosleep
 brew cask install kobo
+brew cask install toggldesktop
 
 # Remove outdated versions
 brew cleanup
